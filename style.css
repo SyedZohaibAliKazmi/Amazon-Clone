@@ -3,6 +3,9 @@
   font-family: Arial;
   border: border-box;
 }
+.body{
+  display: flex;
+}
 .navbar {
   height: 60px;
   background: #0f1111;
