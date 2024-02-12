@@ -3,7 +3,7 @@
   font-family: Arial;
   border: border-box;
 }
-.body{
+.body {
   display: flex;
 }
 .navbar {
@@ -151,16 +151,14 @@ span {
   background-color: #f5d3ed;
 }
 .box {
-  /* border: 2px solid black; */
   height: 400px;
-  width: 23%;
+  width: 300px;
   background-color: white;
   padding: 20px 0px 15px;
   margin-top: 15px;
 }
 /* box 1 kay elements  */
 .box-img {
-  /* background-image: url(./image/Pc.jpg); */
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,6 +193,7 @@ footer {
   height: 300px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 ul {
   margin-top: 20px;
@@ -235,4 +234,133 @@ ul p {
 }
 .copyright {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .nav-search {
+    /* order:3; */
+    width: 30%;
+    height: 25px;
+  }
+  .search-input {
+    font-size: 12px;
+  }
+  .search-select {
+    width: auto;
+  }
+  .nav-cart {
+    font-size: 12px;
+  }
+  .navbar {
+    gap: 15px;
+  }
+  .search-icon {
+    font-size: 12px;
+  }
+  span {
+    display: none;
+  }
+  .nav-second {
+    font-size: 12px;
+  }
+  .nav-cart i {
+    font-size: 20px;
+  }
+  .panel-option {
+    width: auto;
+    font-size: 12px;
+    display: inline;
+  }
+  .panel-deal {
+    font-size: 12px;
+  }
+  .panel-option p {
+    display: inline;
+    margin: left 5px;
+  }
+  .hero-msg {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* box elements  */
+  .shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: #f5d3ed;
+  }
+  .box {
+    height: 280px;
+    width: 250px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  .box-img {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .box-content {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  /* footer kay elements  */
+  .foot-panel1 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .foot-panel2 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .foot-panel2 > ul {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+/* mobile kay liye  */
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    gap: 15px;
+  }
+
+  .nav-search:hover {
+    border: 1px solid orange;
+  }
+
+  .search-icon {
+    font-size: 10px;
+  }
+  .navbar {
+    gap: 18px;
+  }
+
+  .search-input {
+    font-size: 8px;
+  }
+  .search-select {
+    width: auto;
+  }
+  .nav-second {
+    font-size: 10px;
+  }
 }
